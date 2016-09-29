@@ -1,0 +1,137 @@
+body{
+  background: #fff;
+  color: #313131;
+}
+
+h3{color: #000;font-size: 20px;}
+/*左上角背景*/
+/*reset start*/
+th{text-align: center;}
+table{width: auto !important;}
+/*reset stop*/
+
+
+
+#header{
+  background: #000;
+}
+
+#body-inner h1{
+  /*font-size: 20px;*/
+  color:#313131;
+/*  -webkit-font-smoothing: antialiased;
+  line-height: 25px;
+  text-align: left;
+  margin: 10px 0px;*/
+}
+#body-inner h2{
+  /*font-size: 16px;*/
+  color:#313131;
+/*  -webkit-font-smoothing: antialiased;
+  line-height: 20px;
+  text-align: left;
+  margin: 10px 0px;*/
+}
+#body-inner p{
+  font-size: 14px;
+  color:#313131;
+  -webkit-font-smoothing: antialiased;
+  line-height: 25px;
+  text-align: left;
+}
+
+/*图片*/
+#body-inner img{
+  max-width: 100%;
+  border: 1px solid #dddddd;
+}
+
+hr{
+  margin-bottom: 10px; 
+  margin-top: 30px; 
+  border-color: #bfbfbf;
+}
+
+.back-to-top{
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: rgba(0,0,0,0.2);
+  color: #fff;
+}
+.back-to-top:hover{
+  background: rgba(0,0,0,0.6);
+}
+.back-to-top a i{
+  text-align: center;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -25px;
+}
+.top-header {
+    width: 100%;
+    height: 60px;
+    z-index: 99999999;
+    position: fixed;
+    background: transparent;
+    top: 0;
+    transition: all 0.5s;
+    overflow-y: hidden;
+}
+
+.h1-hr{
+  margin: 10px auto;
+}
+
+.table-of-contents a{
+  height: 100%;
+  width: 100%;
+  line-height: 21px;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.table-of-contents a:hover {
+    /*background: #f3f3f3;*/
+    /*border-left: 3px solid #1985c0;*/
+    color: #4ab0e7;
+    text-decoration: underline;
+}
+.table-of-contents li {
+    border-left: 2px solid #efefef;
+    height: 25px;
+    cursor: pointer;
+}
+.table-of-contents a.active {
+    font-weight: 500;
+    color: #000;
+    background: #f3f3f3;
+    border-left: 2px solid #1985c0;
+}
+#sidebar a.active:after{
+    background: url(../img/cd-icons.svg) no-repeat -50px 0;
+}
+@media screen and (max-width: 800px){
+  #sidebar{
+    display: none;
+  }
+  #body{
+    width: 100%;
+    margin: auto;
+  }
+  #index{
+    display: none;
+  }
+}

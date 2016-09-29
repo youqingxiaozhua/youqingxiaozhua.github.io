@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>连接主机</title>
+	<link rel="stylesheet" href="/skin/cloudin/css/reset.css"> <!-- CSS reset -->
+    <link href="/skin/cloudin/css/bootstrap.css" rel="stylesheet">
+	<link href="/skin/cloudin/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="/skin/cloudin/css/style.css"> <!-- Resource style -->
+	<script src="/skin/cloudin/js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" type="text/css" href="/skin/cloudin/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/skin/cloudin/css/docs2.0.css">
+	<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+
+	<!--[if IE]>
+		<script src="//cdn.bootcss.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<nav id="sidebar">
+		<div id="header">
+            <a id="logo" href="https://www.cloudin.cn/"></a><a target="_blank" href="https://www.cloudin.cn/"><img style="width: 58%;margin-bottom: 16px;margin-top: 16px;" src="
+            /skin/cloudin/img/logo_2x.png"></a>
+            <!-- <div class="searchbox">
+                <label for="search-by"><i class="fa fa-search"></i></label>
+                <input id="search-by" type="text" placeholder="输入您想了解的关键词..." data-search-input="/search.json/query">
+                <span data-search-clear=""><i class="fa fa-close"></i></span>
+            </div> -->
+        </div>
+		<ul class="cd-accordion-menu animated">
+			<li class="has-children">
+				<input type="checkbox" name ="faq" id="faq">
+				<label for="faq">FAQ</label>
+	      		<ul>
+					<li><a href="12345">云服务器FAQ</a></li>
+					<li><a href="12345">云安全FAQ</a></li>
+					<li><a href="12345">云监控FAQ</a></li>
+					<li><a href="12345">自动化运维FAQ</a></li>
+					<li><a href="12345">关系型数据库FAQ</a></li>
+					<li><a href="12345">负载均衡FAQ</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="price" id="price">
+				<label for="price">产品定价</label>
+	      		<ul>
+					<li><a href="12345">云主机</a></li>
+					<li><a href="12345">云硬盘</a></li>
+					<li><a href="12345">云备份</a></li>
+					<li><a href="12345">公网IP</a></li>
+					<li><a href="12345">DDoS高防服务</a></li>
+					<li><a href="12345">关系型数据库</a></li>
+					<li><a href="12345">负载均衡</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="beginner" id="beginner">
+				<label for="beginner">新手指南</label>
+	      		<ul>
+					<li><a href="12345">云服务器资源创建</a></li>
+					<li><a href="12345">云服务器组网</a></li>
+					<li><a href="12345">云安全</a></li>
+					<li><a href="12345">云监控</a></li>
+					<li><a href="12345">DDoS高防</a></li>
+					<li><a href="12345">自动化运维</a></li>
+					<li><a href="12345">关系型数据库</a></li>
+					<li><a href="12345">负载均衡</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="">域名备案</a>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="finance" id="finance">
+				<label for="finance">财务相关</label>
+	      		<ul>
+					<li class="has-children">
+						<input type="checkbox" name ="recharge" id="recharge">
+						<label for="recharge">充值</label>
+			      		<ul>
+							<li><a href="/finance/recharge/recharge.html">充值操作</a></li>
+							<li><a href="/finance/recharge/recharge-record.html">充值记录</a></li>
+						</ul>
+					</li>
+					<li class="has-children">
+						<input type="checkbox" name ="resumption" id="resumption">
+						<label for="resumption">消费</label>
+			      		<ul>
+							<li><a href="/finance/consumption/details.html">消费详情</a></li>
+							<li><a href="/finance/consumption/forecast.html">消费预估</a></li>
+						</ul>
+					</li>
+					<li><a href="/finance/invoice/invoice.html">发票</a></li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="server" id="server">
+				<label for="server">云服务器</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="server-intro" id="server-intro">
+						<label for="server-intro">产品简介</label>
+
+						<ul>
+							<li><a href="/web-server/introduction/concept.html">产品概念</a></li>
+							<li><a href="/web-server/introduction/feature.html">产品特性</a></li>
+							<li><a href="/web-server/introduction/quota.html">产品配额</a></li>
+							<li><a href="/web-server/introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="purchase-guide" id="purchase-guide">
+						<label for="purchase-guide">购买指南</label>
+
+						<ul>
+							<li><a href="/web-server/buying-guide/zone.html">地域</a></li>
+							<li><a href="/web-server/buying-guide/purchase-channel.html">购买渠道</a></li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="server-price" id="server-price">
+								<label for="server-price">产品定价</label>
+
+								<ul>
+									<li><a href="/web-server/buying-guide/price/host.html">云主机</a></li>
+									<li><a href="/web-server/buying-guide/price/disk.html">云硬盘</a></li>
+									<li><a href="/web-server/buying-guide/price/ip.html">公网IP</a></li>
+									<li><a href="/web-server/buying-guide/price/backup.html">备份</a></li>
+								</ul>
+			      			</li>		      			
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="server-beginner" id="server-beginner">
+						<label for="server-beginner">新手指南</label>
+
+						<ul>
+							<li><a href="/web-server/beginner-guide/create-resource.html">资源创建</a></li>
+							<li><a href="/web-server/beginner-guide/network.html">组网</a></li>
+						</ul>
+	      			</li>		      			
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="server-operation" id="server-operation">
+						<label for="server-operation">操作指南</label>
+						<ul>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+								<label for="sub-group-1">主机</label>
+								<ul>
+									<li><a href="/web-server/operation-guide/host/create-host.html">创建主机</a></li>
+									<li><a href="/web-server/operation-guide/host/delete-host.html">删除主机</a></li>
+									<li><a href="/web-server/operation-guide/host/connect-host.html">连接主机</a></li>
+									<li><a href="/web-server/operation-guide/host/upgrade.html">升级配置</a></li>
+									<li><a href="/web-server/operation-guide/host/rename.html">修改名称</a></li>
+									<li><a href="/web-server/operation-guide/host/monitor.html">监控信息</a></li>
+									<li><a href="/web-server/operation-guide/host/manage-host.html">主机管理</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="server-disk" id="server-disk">
+								<label for="server-disk">硬盘</label>
+								<ul>
+									<li><a href="/web-server/operation-guide/disk/create-disk.html">创建硬盘</a></li>
+									<li><a href="/web-server/operation-guide/disk/delete-disk.html">删除硬盘</a></li>
+									<li><a href="/web-server/operation-guide/disk/connect-disk.html">连接硬盘</a></li>
+									<li><a href="/web-server/operation-guide/disk/%20disconnect-disk.html">卸载硬盘</a></li>
+									<li><a href="/web-server/operation-guide/disk/enlarge-disk.html">硬盘扩容</a></li>
+									<li><a href="/web-server/operation-guide/disk/format-to-use.html">格式化及使用</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="opr-subnet" id="opr-subnet">
+								<label for="opr-subnet">子网</label>
+								<ul>
+									<li><a href="/web-server/operation-guide/subnet/type.html">子网类型</a></li>
+									<li><a href="/web-server/operation-guide/subnet/create-subnet.html">创建子网</a></li>
+									<li><a href="/web-server/operation-guide/subnet/delete-subnet.html">删除子网</a></li>
+									<li><a href="/web-server/operation-guide/subnet/add-hosts.html">添加云主机</a></li>
+									<li><a href="/web-server/operation-guide/subnet/leave-network.html">离开子网</a></li>
+									<li><a href="/web-server/operation-guide/subnet/host-config.html">主机子网配置</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-router" id="oprt-router">
+								<label for="oprt-router">路由器</label>
+								<ul>
+									<li><a href="/web-server/operation-guide/router/create-router.html">创建</a></li>
+									<li><a href="/web-server/operation-guide/router/delete-router.html">删除</a></li>
+									<li><a href="/web-server/operation-guide/router/connect-subnet.html">关联子网</a></li>
+									<li><a href="/web-server/operation-guide/router/public-network-gateway.html">公网网关</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-ip" id="oprt-ip">
+								<label for="oprt-ip">公网IP</label>
+								<ul>
+									<li><a href="/web-server/operation-guide/ip/creat-public-ip.html">申请</a></li>
+									<li><a href="/web-server/operation-guide/ip/delete-public-ip.html">删除</a></li>
+									<li><a href="/web-server/operation-guide/ip/connect-to-host.html">分配到主机</a></li>
+									<li><a href="/web-server/operation-guide/ip/adjust-bandwidth.html">调整带宽</a></li>
+									<li><a href="/web-server/operation-guide/ip/adjust-billing-method.html">调整计费方式</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-backup" id="oprt-backup">
+								<label for="oprt-backup">备份</label>
+								<ul>
+									<li><a href="/web-server/operation-guide/backup/create-backup.html">创建备份</a></li>
+									<li><a href="/web-server/operation-guide/backup/delete-backup.html">删除备份</a></li>
+									<li><a href="/web-server/operation-guide/backup/restore.html">从备份中还原</a></li>
+									<li><a href="/web-server/operation-guide/backup/restore-to-new.html">从备份新建</a></li>
+								</ul>
+			      			</li>
+						</ul>
+	      			</li>
+	      			<li><a href="/web-server/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="security_service" id="security_service">
+				<label for="security_service">云安全</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_introduction" id="security_service_introduction">
+						<label for="security_service_introduction">产品简介</label>
+
+						<ul>
+							<li><a href="/security-service/product-introduction/concept.html">产品概念</a></li>
+							<li><a href="/security-service/product-introduction/feature.html">产品特性</a></li>
+							<li><a href="/security-service/product-introduction/quota.html">产品配额</a></li>
+							<li><a href="/security-service/product-introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_purchase_guide" id="security_service_purchase_guide">
+						<label for="security_service_purchase_guide">购买指南</label>
+
+						<ul>
+							<li><a href="/security-service/purchase-guide/purchase-channel.html">购买渠道</a></li>
+							<li><a href="/security-service/purchase-guide/price.html">产品定价</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_beginner_guide" id="security_service_beginner_guide">
+						<label for="security_service_beginner_guide">新手指南</label>
+
+						<ul>
+							<li><a href="/security-service/beginner-guide/security-rule.html">安全组规则</a></li>
+							<li><a href="/security-service/beginner-guide/ddos.html">DDoS高防服务 </a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_operation_guide" id="security_service_operation_guide">
+						<label for="security_service_operation_guide">操作指南</label>
+
+						<ul>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="security_service_operation_guide_security_group" id="security_service_operation_guide_security_group">
+								<label for="security_service_operation_guide_security_group">安全组</label>
+								<ul>
+									<li><a href="/security-service/operations-guide/security-group/creat-security-group.html">创建安全组</a></li>
+									<li><a href="/security-service/operations-guide/security-group/delete-security-group.html">删除安全组</a></li>
+									<li><a href="/security-service/operations-guide/security-group/config-security-rules.html">设置安全组规则</a></li>
+									<li><a href="/security-service/operations-guide/security-group/apply-to-host.html">应用到主机</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-key" id="oprt-key">
+								<label for="oprt-key">密钥</label>
+								<ul>
+									<li><a href="/security-service/operations-guide/key/create-key.html">创建密钥</a></li>
+									<li><a href="/security-service/operations-guide/key/download-key.html">下载密钥</a></li>
+									<li><a href="/security-service/operations-guide/key/attach-key.html">加载密钥</a></li>
+									<li><a href="/security-service/operations-guide/key/use-key-to-login.html">使用密钥登录</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-ddos" id="oprt-ddos">
+								<label for="oprt-ddos">DDoS高防服务</label>
+								<ul>
+									<li><a href="/security-service/operations-guide/ddos/add-domain.html">添加域名</a></li>
+									<li><a href="/security-service/operations-guide/ddos/config-record.html">配置主机记录</a></li>
+									<li><a href="/security-service/operations-guide/ddos/config-record.html">修改域名cname</a></li>
+									<li><a href="/security-service/operations-guide/ddos/edit-record.html">编辑主机记录</a></li>
+									<li><a href="/security-service/operations-guide/ddos/delete-record.html">删除记录</a></li>
+									<li><a href="/security-service/operations-guide/ddos/upgrade-defense.html">升级防御带宽</a></li>
+									<li><a href="/security-service/operations-guide/ddos/renewals.html">续费</a></li>
+									<li><a href="/security-service/operations-guide/ddos/close-service.html">关闭服务</a></li>
+									<li><a href="/security-service/operations-guide/ddos/delete-domain.html">删除域名</a></li>
+								</ul>
+			      			</li>
+						</ul>
+	      			</li>
+					<li><a href="/security-service/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+
+
+
+<!-- 以下为原来的 by 薛方磊 -->
+			<li class="has-children">
+				<input type="checkbox" name ="group-2" id="group-2">
+				<label for="group-2">快速入门</label>
+
+				<ul>
+					<li><a href="12345">1. 创建主机</a></li>
+					<li><a href="12345">2. 申请公网IP</a></li>
+					<li><a href="12345">3. 登录主机</a></li>
+					<li><a href="12345">4. 格式化数据盘</a></li>
+					<li><a href="12345">5. 搭建一个WordPress博客</a></li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="group-3" id="group-3">
+				<label for="group-3">购买指南</label>
+
+				<ul>
+					<li><a href="12345">计费模式</a></li>
+					<li><a href="12345">产品定价</a></li>
+					<li><a href="12345">购买渠道</a></li>
+					<li><a href="12345">账户充值</a></li>
+					<li><a href="12345">开具发票</a></li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="group-4" id="group-4">
+				<label for="group-4">常见问题</label>
+
+				<ul>
+
+					<li><a href="12345">云服务器</a></li>
+					<li><a href="12345">云安全</a></li>
+					<li><a href="12345">云监控</a></li>
+					<li><a href="12345">关系型数据库</a></li>
+					<li><a href="12345">自动化运维</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="group-5" id="group-5">
+				<label for="group-5">操作指南</label>
+
+				<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="oprt-sev" id="oprt-sev">
+						<label for="oprt-sev">云服务器</label>
+						<ul>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-sev-cmpt" id="oprt-sev-cmpt">
+								<label for="oprt-sev-cmpt">主机</label>
+								<ul>
+									<li><a href="12345">创建主机</a></li>
+									<li><a href="12345">删除主机</a></li>
+									<li><a href="12345">连接主机</a></li>
+									<li><a href="12345">升级配置</a></li>
+									<li><a href="12345">监控信息</a></li>
+									<li><a href="12345">重置密码</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-sev-store" id="oprt-sev-store">
+								<label for="oprt-sev-store">存储</label>
+								<ul>
+									<li><a href="12345">创建硬盘</a></li>
+									<li><a href="12345">删除硬盘</a></li>
+									<li><a href="12345">挂在到主机</a></li>
+									<li><a href="12345">从主机卸载</a></li>
+									<li><a href="12345">硬盘扩容</a></li>
+									<li><a href="12345">格式化及使用</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-sev-subnet" id="oprt-sev-subnet">
+								<label for="oprt-sev-subnet">子网</label>
+								<ul>
+									<li><a href="12345">概念概述</a></li>
+									<li><a href="12345">创建子网</a></li>
+									<li><a href="12345">删除子网</a></li>
+									<li><a href="12345">添加主机</a></li>
+									<li><a href="12345">剔除主机</a></li>
+									<li><a href="12345">Linux下子网配置</a></li>
+								</ul>
+			      			</li>
+							<li><a href="12345">路由器</a></li>
+							<li><a href="12345">公网IP</a></li>
+							<li><a href="12345">备份</a></li>
+							<li><a href="12345">镜像</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="oprt-secure" id="oprt-secure">
+						<label for="oprt-secure">云安全</label>
+						<ul>
+							<li><a href="12345">安全组</a></li>
+							<li><a href="12345">密钥</a></li>
+							<li><a href="12345">DDos高防服务</a></li>
+						</ul>
+	      			</li>					<li><a href="12345">购买渠道</a></li>
+					<li><a href="12345">账户充值</a></li>
+					<li><a href="12345">开具发票</a></li>
+				</ul>
+			</li>
+		</ul> <!-- cd-accordion-menu -->
+
+	</nav>
+	<section id="body">
+<!-- 		<div class="mianbao">
+			操作指南>云服务器>主机>创建主机
+		</div> -->
+		<div class="padding highlightable">
+			<div id="body-inner">
+<h1>连接主机</h1>
+<br>
+<p>CloudIn提供了多种方法来连接主机。</p>
+<h2 id="方法一控制台连接">方法一：控制台连接</h2>
+<p>此方法对于 Linux 和 Windows 操作系统都适用。</p>
+<p>登录 CloudIn 控制台，并选择&ldquo;地域&rdquo;；选择&ldquo;计算￫主机&rdquo;，在每台主机的名称旁边都有一个显示器模样的按钮，点击它， 即可打开远程连接页面连接到主机的本地显示器。（如果未有页面弹出请检查是否有被浏览器拦截）</p>
+<div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-01.png" alt="" /></div>
+<h2 id="方法二使用-ssh">方法二：使用 SSH</h2>
+<p>此操作仅支持 Linux 操作系统。</p>
+<p><strong>密码登陆： </strong>ssh root@ip_address </p>
+<p><strong>密钥登陆：</strong>见后文<a href="https://www.cloudin.cn/docs.html?r=products/security_service/markdown/operation_guide/key/RemoteAccessMethod">密钥</a>功能模块指南</p>
+<h2 id="方法三使用远程桌面">方法三：使用远程桌面</h2>
+<p>此操作仅支持 Windows 操作系统。</p>
+<h3 id="主机内部设置">主机内部设置</h3>
+<p>备注：使用 Mac 远程桌面连接 windows 2012 需要在主机内部做一些设置，才能正常连接。</p>
+<ol style="list-style-type: decimal">
+    <li>
+    <p>通过 VNC 连接进入 window 2012主机;</p>
+    </li>
+    <li>
+    <p>点击任务栏 powershell ,输入命令 gpedit.msc后回车，会显示本地组策略编辑器;</p>
+    </li>
+    <li>
+    <p>依次找到【计算机配置】-&gt;【管理模板】-&gt;【 windows 组件】-&gt;【远程桌面服务】-&gt;【远程桌面会话主机】-&gt;【安全】-&gt;【远程（ RDP ）连接要求使用指定的安全层】，如下图：</p>
+    </li>
+</ol>
+<div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-02.png" alt="" /></div>
+<ol style="list-style-type: decimal" start="4">
+    <li>双击【远程（ RDP ）连接要求使用指定的安全层】，出现下图：</li>
+</ol>
+<div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-03.png" alt="" /></div>
+<ol style="list-style-type: decimal" start="5">
+    <li>将截图中的未配置，修改为已启用，安全层选择 RDP，最后点击应用让配置生效。</li>
+</ol>
+<h3 id="连接主机-1">连接主机</h3>
+<ol style="list-style-type: decimal">
+    <li>
+    <p>选择 <strong>开始菜单</strong> 然后单击 <strong>所有程序</strong> 再单击 <strong>附件</strong> 最后单击 <strong>远程桌面连接</strong>，如下图所示：</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-04.png" alt="" /></div>
+    <p>提示：也可以单击 <strong>开始菜单</strong> 然后单击 运行 ，输入命令 <strong>mstsc</strong> 后回车，就可以启动远程桌面连接；或者使用快捷键&ldquo;Win&rdquo;+&ldquo;R&rdquo;来启动 运行 窗口，输入命令 <strong>mstsc</strong> 后回车启动远程桌面连接</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-05.png" alt="" /></div>
+    </li>
+    <li>
+    <p>在计算机后面的输入框中，输入您的云服务器的外网IP地址，然后单击 <strong>连接</strong> 。</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-06.png" alt="" /></div>
+    </li>
+    <li>
+    <p>输入您云服务器的用户名和密码即可登录。</p>
+    </li>
+</ol>
+<h3 id="提示">提示：</h3>
+<ol style="list-style-type: decimal">
+    <li>
+    <p>如果需要设置保存输入的密码，点击 <strong>选项</strong> ，勾选 <strong>允许我保存凭据</strong> 即可。这样就可以复制主机的密码，不再需要手动输入。</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-07.png" alt="" /></div>
+    </li>
+    <li>
+    <p>若要调整窗口大小，在 <strong>显示</strong> 选项卡中进行配置。</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-08.png" alt="" /></div>
+    </li>
+</ol>
+<h3 id="通过远程桌面共享本地电脑资源">通过远程桌面共享本地电脑资源</h3>
+<p>在 <strong>本地资源</strong> 选项卡中进行设置，一般是会勾选：</p>
+<ul>
+    <li>剪贴板（从本地直接复制文字信息时用到，但不能复制文件）；</li>
+    <li>
+    <p>需要复制文件，需要点击 <strong>详细信息</strong> ，选择 <strong>驱动器</strong> ，勾选文件存放的盘符信息，这样就可以了。</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-09.png" alt="" /></div>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-10.png" alt="" /></div>
+    <p>点击确定后如弹出警告信息，直接确认即可。</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-11.png" alt="" /></div>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-12.png" alt="" /></div>
+    </li>
+</ul>
+<p><strong>提示</strong>：</p>
+<p>　　在 <strong>远程桌面连接</strong> 中，服务器身份验证可验证您是否连接到正确的远程计算机或服务器。此安全措施有助于防止连接到非预期的计算机或服务器，从而消除因为此错误连接导致暴露保密信息的可能性。</p>
+<p>　　连接所必需的验证强度是由您的系统安全策略决定的，此策略由您的系统管理员设置。如果实际的验证不符合最低的策略要求，则有三个可用的身份验证选项供您选择：</p>
+<ul>
+    <li>
+    <p><strong>连接并且不向我发出警告：</strong>使用此选项，即使远程桌面连接无法验证远程计算机的身份，它仍然会连接。</p>
+    </li>
+    <li>
+    <p><strong>向我发出警告：</strong>使用此选项，如果远程桌面连接无法验证远程计算机的身份，则向您发出警告，以便您选择是否继续连接。</p>
+    </li>
+    <li>
+    <p><strong>不连接：</strong>使用此选项，如果远程桌面连接无法验证远程计算机的身份，则无法建立连接。</p>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-13.png" alt="" /></div>
+    <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-14.png" alt="" /></div>
+    </li>
+</ul>
+<p><strong>提醒：若要在 Linux 系统上远程连接 Windows 服务器，可以使用 Rdesktop 工具。</strong></p>			<hr>
+			<p>
+				如果您有更多问题, <a href="mailto:info@cloudin.cn"> 发送邮件 </a>或者 <a target="_blank" href="https://console.cloudin.cn/ticket"> 提工单 </a>反馈给我们。
+			</p>
+
+			</div>
+		</div>
+	</section>
+
+<script type="text/javascript">
+    var title2 = document.getElementsByTagName("h2");
+    if (title2.length > 2) {
+        document.write('<section id="index"><ul class="table-of-contents">');
+    	for (var i = 0;i < title2.length;i++){
+	        title2.name = title2[i].innerHTML;
+	        document.write('<li class="indexlist"><a>'+title2[i].innerHTML+'</a></li>');
+	    }
+        document.write('</ul></section>');
+    }else{
+        document.write('<style>#body{margin-right:0px}</style>');
+    }
+</script>
+
+	<div class="back-to-top">
+		<a ><i class="fa fa-arrow-up"></i></a>
+	</div>
+	<script src="/skin/cloudin/js/main.js"></script> <!-- Resource jQuery -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="/skin/cloudin/js/bootstrap.js"></script>
+</body>
+</html>
