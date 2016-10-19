@@ -8,7 +8,7 @@ nav sidebar
     background-color: #38424D;
     position: fixed;
     top: 0;
-    width: 300px;
+    width: 280px;
     bottom: 0;
     left: 0;
     font-weight: 500;
@@ -19,7 +19,7 @@ label{
   margin-bottom: 0;
 }
 #header {
-    background: #3894ce;
+    /*background: #3894ce;*/
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -79,7 +79,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Jaldi", sans-serif;
-  color: #ffffff;
+  /*color: #ffffff;*/
   /*background-color: #a0f6aa;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,7 +186,7 @@ Main Components
 }
 .cd-accordion-menu a::after {
   /* image icon */
-  left: 36px;
+  left: 56px;
   /*background: url(../img/cd-icons.svg) no-repeat -48px 0;*/
   background: url(../img/cd-icons.svg) no-repeat -65px 0;
 }
@@ -255,7 +255,8 @@ Main Components
 }
 @media only screen and (min-width: 600px) {
   .cd-accordion-menu label, .cd-accordion-menu a {
-    padding: 18px 24px 18px 82px;
+    /*padding: 18px 24px 18px 82px;*/
+    padding: 12px 10px 12px 80px;
     /*font-size: 1.9rem;*/
   }
   .cd-accordion-menu label::before {
@@ -266,36 +267,36 @@ Main Components
   }
   .cd-accordion-menu ul label,
   .cd-accordion-menu ul a {
-    padding-left: 106px;
+    padding-left: 86px;
   }
   .cd-accordion-menu ul label::before {
-    left: 48px;
+    left: 36px;
   }
   .cd-accordion-menu ul label::after,
   .cd-accordion-menu ul a::after {
-    left: 77px;
+    left: 60px;
   }
   .cd-accordion-menu ul ul label,
   .cd-accordion-menu ul ul a {
-    padding-left: 130px;
+    padding-left: 124px;
   }
   .cd-accordion-menu ul ul label::before {
     left: 72px;
   }
   .cd-accordion-menu ul ul label::after,
   .cd-accordion-menu ul ul a::after {
-    left: 101px;
+    left: 96px;
   }
   .cd-accordion-menu ul ul ul label,
   .cd-accordion-menu ul ul ul a {
-    padding-left: 154px;
+    padding-left: 124px;
   }
   .cd-accordion-menu ul ul ul label::before {
     left: 96px;
   }
   .cd-accordion-menu ul ul ul label::after,
   .cd-accordion-menu ul ul ul a::after {
-    left: 125px;
+    left: 100px;
   }
 }
 .cd-accordion-menu.animated label::before {
@@ -307,7 +308,7 @@ Main Components
 
 #body {
     position: relative;
-    margin-left: 300px;
+    margin-left: 280px;
     min-height: 100%;
     margin-right: 180px;
     /*padding-top: 60px;*/

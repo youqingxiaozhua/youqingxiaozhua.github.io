@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+jQuery(window).load(function(){
 	var accordionsMenu = $('.cd-accordion-menu');
 
 	if( accordionsMenu.length > 0 ) {
@@ -21,6 +21,7 @@ jQuery(document).ready(function(){
 
 	var moreT = 60;
     var moreTopNum = [];
+
     $("#body-inner").find('h2').each(function() {
       moreTopNum.push($(this).offset().top - moreT);
     });
@@ -29,13 +30,12 @@ jQuery(document).ready(function(){
 	    $("#body-inner").find('h3').each(function() {
 	      moreTopNum.push($(this).offset().top - moreT);
 	    });
-	        // console.log(moreTopNum);
+	        console.log(moreTopNum);
     };
 
 
-
     //滚动条滚动触发函数
-    tabs(0);//初始化第一个active
+    tabs(0);//初始化第一个为active
     $(document).scroll(function() {
       var docTop = $(document).scrollTop();
       for (var i = 0; i < moreTopNum.length; i++) {
@@ -75,6 +75,10 @@ jQuery(document).ready(function(){
 
 	    });
 	});
+	
+});
+jQuery(document).ready(function(){
+
 	// 左侧导航添加checked
 	$(function(){
 	    var current = location.pathname;
@@ -90,10 +94,4 @@ jQuery(document).ready(function(){
 		        }
 		    });
 	});
-
-
-
-
-
-	
 });
