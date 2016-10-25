@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>创建数据库</title>
+	<link rel="stylesheet" href="/docs/skin/cloudin/css/reset.css"> <!-- CSS reset -->
+    <link href="/docs/skin/cloudin/css/bootstrap.css" rel="stylesheet">
+	<link href="/docs/skin/cloudin/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="/docs/skin/cloudin/css/style.css"> <!-- Resource style -->
+	<script src="/docs/skin/cloudin/js/modernizr.js"></script> <!-- Modernizr -->
+	<link rel="stylesheet" type="text/css" href="/docs/skin/cloudin/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/docs/skin/cloudin/css/docs2.0.css">
+	<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+
+	<!--[if IE]>
+		<script src="//cdn.bootcss.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<nav id="sidebar">
+		<div id="header">
+            <a id="logo" href="https://www.cloudin.cn/"></a><a target="_blank" href="https://www.cloudin.cn/"><img style="width: 58%;margin-bottom: 16px;margin-top: 16px;" src="
+            /docs/skin/cloudin/img/logo_2x.png"></a>
+            <!-- <div class="searchbox">
+                <label for="search-by"><i class="fa fa-search"></i></label>
+                <input id="search-by" type="text" placeholder="输入您想了解的关键词..." data-search-input="/search.json/query">
+                <span data-search-clear=""><i class="fa fa-close"></i></span>
+            </div> -->
+        </div>
+		<ul class="cd-accordion-menu animated">
+			<li class="has-children">
+				<input type="checkbox" name ="faq" id="faq">
+				<label for="faq">FAQ</label>
+	      		<ul>
+					<li><a href="/docs/web-server/faq/faq.html">云服务器FAQ</a></li>
+					<li><a href="/docs/security-service/faq/faq.html">云安全FAQ</a></li>
+					<li><a href="/docs/cloud-monitor/faq/faq.html">云监控FAQ</a></li>
+					<li><a href="/docs/devops/faq/faq.html">自动化运维FAQ</a></li>
+					<li><a href="/docs/rds/faq/faq.html">关系型数据库FAQ</a></li>
+					<li><a href="/docs/lb/faq/faq.html">负载均衡FAQ</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="price" id="price">
+				<label for="price">产品定价</label>
+	      		<ul>
+					<li><a href="/docs/web-server/buying-guide/price/host.html">云主机</a></li>
+					<li><a href="/docs/web-server/buying-guide/price/disk.html">云硬盘</a></li>
+					<li><a href="/docs/web-server/buying-guide/price/backup.html">云备份</a></li>
+					<li><a href="/docs/web-server/buying-guide/price/ip.html">公网IP</a></li>
+					<li><a href="/docs/security-service/purchase-guide/price.html">DDoS高防服务</a></li>
+					<li><a href="/docs/rds/purchase-guide/price.html">关系型数据库</a></li>
+					<li><a href="/docs/lb/purchase-guide/price.html">负载均衡</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="beginner" id="beginner">
+				<label for="beginner">新手指南</label>
+	      		<ul>
+					<li><a href="/docs/web-server/beginner-guide/create-resource.html">云服务器资源创建</a></li>
+					<li><a href="/docs/web-server/beginner-guide/network.html">云服务器组网</a></li>
+					<li><a href="/docs/security-service/beginner-guide/security-rule.html">安全组规则</a></li>
+					<li><a href="/docs/cloud-monitor/beginner-guide/monitor-and-alert.html">云监控</a></li>
+					<li><a href="/docs/security-service/beginner-guide/ddos.html">DDoS高防</a></li>
+					<li><a href="/docs/devops/beginner-guide/146.html">自动化运维</a></li>
+					<li><a href="/docs/rds/beginner-guide/create-resource.html">关系型数据库</a></li>
+					<li><a href="/docs/lb/beginner-guide/plan.html">负载均衡</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/docs/beian/beian.html">域名备案</a>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="finance" id="finance">
+				<label for="finance">财务相关</label>
+	      		<ul>
+					<li class="has-children">
+						<input type="checkbox" name ="recharge" id="recharge">
+						<label for="recharge">充值</label>
+			      		<ul>
+							<li><a href="/docs/finance/recharge/recharge.html">充值操作</a></li>
+							<li><a href="/docs/finance/recharge/recharge-record.html">充值记录</a></li>
+						</ul>
+					</li>
+					<li class="has-children">
+						<input type="checkbox" name ="resumption" id="resumption">
+						<label for="resumption">消费</label>
+			      		<ul>
+							<li><a href="/docs/finance/consumption/details.html">消费详情</a></li>
+							<li><a href="/docs/finance/consumption/forecast.html">消费预估</a></li>
+						</ul>
+					</li>
+					<li><a href="/docs/finance/invoice/invoice.html">发票</a></li>
+				</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="server" id="server">
+				<label for="server">云服务器</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="server-intro" id="server-intro">
+						<label for="server-intro">产品简介</label>
+
+						<ul>
+							<li><a href="/docs/web-server/introduction/concept.html">产品概念</a></li>
+							<li><a href="/docs/web-server/introduction/feature.html">产品特性</a></li>
+							<li><a href="/docs/web-server/introduction/quota.html">产品配额</a></li>
+							<li><a href="/docs/web-server/introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="purchase-guide" id="purchase-guide">
+						<label for="purchase-guide">购买指南</label>
+
+						<ul>
+							<li><a href="/docs/web-server/buying-guide/zone.html">地域</a></li>
+							<li><a href="/docs/web-server/buying-guide/purchase-channel.html">购买渠道</a></li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="server-price" id="server-price">
+								<label for="server-price">产品定价</label>
+
+								<ul>
+									<li><a href="/docs/web-server/buying-guide/price/host.html">云主机</a></li>
+									<li><a href="/docs/web-server/buying-guide/price/disk.html">云硬盘</a></li>
+									<li><a href="/docs/web-server/buying-guide/price/ip.html">公网IP</a></li>
+									<li><a href="/docs/web-server/buying-guide/price/backup.html">备份</a></li>
+								</ul>
+			      			</li>		      			
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="server-beginner" id="server-beginner">
+						<label for="server-beginner">新手指南</label>
+
+						<ul>
+							<li><a href="/docs/web-server/beginner-guide/create-resource.html">资源创建</a></li>
+							<li><a href="/docs/web-server/beginner-guide/network.html">组网</a></li>
+						</ul>
+	      			</li>		      			
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="server-operation" id="server-operation">
+						<label for="server-operation">操作指南</label>
+						<ul>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+								<label for="sub-group-1">主机</label>
+								<ul>
+									<li><a href="/docs/web-server/operation-guide/host/create-host.html">创建主机</a></li>
+									<li><a href="/docs/web-server/operation-guide/host/delete-host.html">删除主机</a></li>
+									<li><a href="/docs/web-server/operation-guide/host/connect-host.html">连接主机</a></li>
+									<li><a href="/docs/web-server/operation-guide/host/upgrade.html">升级配置</a></li>
+									<li><a href="/docs/web-server/operation-guide/host/rename.html">修改名称</a></li>
+									<li><a href="/docs/web-server/operation-guide/host/monitor.html">监控信息</a></li>
+									<li><a href="/docs/web-server/operation-guide/host/manage-host.html">主机管理</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="server-disk" id="server-disk">
+								<label for="server-disk">硬盘</label>
+								<ul>
+									<li><a href="/docs/web-server/operation-guide/disk/create-disk.html">创建硬盘</a></li>
+									<li><a href="/docs/web-server/operation-guide/disk/delete-disk.html">删除硬盘</a></li>
+									<li><a href="/docs/web-server/operation-guide/disk/connect-disk.html">连接硬盘</a></li>
+									<li><a href="/docs/web-server/operation-guide/disk/%20disconnect-disk.html">卸载硬盘</a></li>
+									<li><a href="/docs/web-server/operation-guide/disk/enlarge-disk.html">硬盘扩容</a></li>
+									<li><a href="/docs/web-server/operation-guide/disk/format-to-use.html">格式化及使用</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="opr-subnet" id="opr-subnet">
+								<label for="opr-subnet">子网</label>
+								<ul>
+									<li><a href="/docs/web-server/operation-guide/subnet/type.html">子网类型</a></li>
+									<li><a href="/docs/web-server/operation-guide/subnet/create-subnet.html">创建子网</a></li>
+									<li><a href="/docs/web-server/operation-guide/subnet/delete-subnet.html">删除子网</a></li>
+									<li><a href="/docs/web-server/operation-guide/subnet/add-hosts.html">添加云主机</a></li>
+									<li><a href="/docs/web-server/operation-guide/subnet/leave-network.html">离开子网</a></li>
+									<li><a href="/docs/web-server/operation-guide/subnet/host-config.html">主机子网配置</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-router" id="oprt-router">
+								<label for="oprt-router">路由器</label>
+								<ul>
+									<li><a href="/docs/web-server/operation-guide/router/create-router.html">创建</a></li>
+									<li><a href="/docs/web-server/operation-guide/router/delete-router.html">删除</a></li>
+									<li><a href="/docs/web-server/operation-guide/router/connect-subnet.html">关联子网</a></li>
+									<li><a href="/docs/web-server/operation-guide/router/public-network-gateway.html">公网网关</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-ip" id="oprt-ip">
+								<label for="oprt-ip">公网IP</label>
+								<ul>
+									<li><a href="/docs/web-server/operation-guide/ip/creat-public-ip.html">申请</a></li>
+									<li><a href="/docs/web-server/operation-guide/ip/delete-public-ip.html">删除</a></li>
+									<li><a href="/docs/web-server/operation-guide/ip/connect-to-host.html">分配到主机</a></li>
+									<li><a href="/docs/web-server/operation-guide/ip/adjust-bandwidth.html">调整带宽</a></li>
+									<li><a href="/docs/web-server/operation-guide/ip/adjust-billing-method.html">调整计费方式</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-backup" id="oprt-backup">
+								<label for="oprt-backup">备份</label>
+								<ul>
+									<li><a href="/docs/web-server/operation-guide/backup/create-backup.html">创建备份</a></li>
+									<li><a href="/docs/web-server/operation-guide/backup/delete-backup.html">删除备份</a></li>
+									<li><a href="/docs/web-server/operation-guide/backup/restore.html">从备份中还原</a></li>
+									<li><a href="/docs/web-server/operation-guide/backup/restore-to-new.html">从备份新建</a></li>
+								</ul>
+			      			</li>
+						</ul>
+	      			</li>
+	      			<li><a href="/docs/web-server/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="security_service" id="security_service">
+				<label for="security_service">云安全</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_introduction" id="security_service_introduction">
+						<label for="security_service_introduction">产品简介</label>
+
+						<ul>
+							<li><a href="/docs/security-service/product-introduction/concept.html">产品概念</a></li>
+							<li><a href="/docs/security-service/product-introduction/feature.html">产品特性</a></li>
+							<li><a href="/docs/security-service/product-introduction/quota.html">产品配额</a></li>
+							<li><a href="/docs/security-service/product-introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_purchase_guide" id="security_service_purchase_guide">
+						<label for="security_service_purchase_guide">购买指南</label>
+
+						<ul>
+							<li><a href="/docs/security-service/purchase-guide/purchase-channel.html">购买渠道</a></li>
+							<li><a href="/docs/security-service/purchase-guide/price.html">产品定价</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_beginner_guide" id="security_service_beginner_guide">
+						<label for="security_service_beginner_guide">新手指南</label>
+
+						<ul>
+							<li><a href="/docs/security-service/beginner-guide/security-rule.html">安全组规则</a></li>
+							<li><a href="/docs/security-service/beginner-guide/ddos.html">DDoS高防服务 </a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="security_service_operation_guide" id="security_service_operation_guide">
+						<label for="security_service_operation_guide">操作指南</label>
+
+						<ul>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="security_service_operation_guide_security_group" id="security_service_operation_guide_security_group">
+								<label for="security_service_operation_guide_security_group">安全组</label>
+								<ul>
+									<li><a href="/docs/security-service/operations-guide/security-group/creat-security-group.html">创建安全组</a></li>
+									<li><a href="/docs/security-service/operations-guide/security-group/delete-security-group.html">删除安全组</a></li>
+									<li><a href="/docs/security-service/operations-guide/security-group/config-security-rules.html">设置安全组规则</a></li>
+									<li><a href="/docs/security-service/operations-guide/security-group/apply-to-host.html">应用到主机</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-key" id="oprt-key">
+								<label for="oprt-key">密钥</label>
+								<ul>
+									<li><a href="/docs/security-service/operations-guide/key/create-key.html">创建密钥</a></li>
+									<li><a href="/docs/security-service/operations-guide/key/download-key.html">下载密钥</a></li>
+									<li><a href="/docs/security-service/operations-guide/key/attach-key.html">加载密钥</a></li>
+									<li><a href="/docs/security-service/operations-guide/key/use-key-to-login.html">使用密钥登录</a></li>
+								</ul>
+			      			</li>
+			      			<li class="has-children">
+			      				<input type="checkbox" name ="oprt-ddos" id="oprt-ddos">
+								<label for="oprt-ddos">DDoS高防服务</label>
+								<ul>
+									<li><a href="/docs/security-service/operations-guide/ddos/add-domain.html">添加域名</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/config-record.html">配置主机记录</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/change-cname.html">修改域名cname</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/edit-record.html">编辑主机记录</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/delete-record.html">删除记录</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/upgrade-defense.html">升级防御带宽</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/renewals.html">续费</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/close-service.html">关闭服务</a></li>
+									<li><a href="/docs/security-service/operations-guide/ddos/delete-domain.html">删除域名</a></li>
+								</ul>
+			      			</li>
+						</ul>
+	      			</li>
+					<li><a href="/docs/security-service/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="cloud_monitor" id="cloud_monitor">
+				<label for="cloud_monitor">云监控</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="cloud_monitor_introduction" id="cloud_monitor_introduction">
+						<label for="cloud_monitor_introduction">产品简介</label>
+
+						<ul>
+							<li><a href="/docs/cloud-monitor/introduction/concept.html">产品概念</a></li>
+							<li><a href="/docs/cloud-monitor/introduction/feature.html">产品优势</a></li>
+							<li><a href="/docs/cloud-monitor/introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+					<li><a href="/docs/cloud-monitor/purchase-guide/purchase-channel.html">购买渠道</a></li>
+
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="cloud_monitor_beginner_guide" id="cloud_monitor_beginner_guide">
+						<label for="cloud_monitor_beginner_guide">新手指南</label>
+
+						<ul>
+							<li><a href="/docs/cloud-monitor/beginner-guide/monitor-and-alert.html">监控报警</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="cloud_monitor_operation_guide" id="cloud_monitor_operation_guide">
+						<label for="cloud_monitor_operation_guide">操作指南</label>
+
+						<ul>
+							<li><a href="/docs/cloud-monitor/operation-guide/monitor-center.html">监控中心</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert/create-alert.html">创建告警</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert/delete-alert.html">删除告警</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert/attach-host.html">绑定资源</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert/adjust-monitoring-cycle.html">调整监控周期</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert/alert-rules.html">告警规则</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert/notice-rules.html">通知策略</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/notice-group/notice-group.html">通知组</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/notice-group/notice-group-member.html">通知组成员</a></li>
+							<li><a href="/docs/cloud-monitor/operation-guide/alert-history.html">告警历史</a></li>
+
+						</ul>
+	      			</li>
+					<li><a href="/docs/cloud-monitor/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="devops" id="devops">
+				<label for="devops">自动化运维</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="devops_introduction" id="devops_introduction">
+						<label for="devops_introduction">产品简介</label>
+
+						<ul>
+							<li><a href="/docs/devops/introduction/concept.html">产品概念</a></li>
+							<li><a href="/docs/devops/introduction/feature.html">产品特性</a></li>
+							<li><a href="/docs/devops/introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="devops_beginner_guide" id="devops_beginner_guide">
+						<label for="devops_beginner_guide">新手指南</label>
+
+						<ul>
+							<li><a href="/docs/devops/beginner-guide/146.html">申请权限</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="devops_operation_guide" id="devops_operation_guide">
+						<label for="devops_operation_guide">操作指南</label>
+						<ul>
+							<li><a href="/docs/devops/operation-guide/sub-account/sub-account.html">子帐号管理</a></li>
+							<li><a href="/docs/devops/operation-guide/manage-resource/jumper.html">跳板机管理</a></li>
+							<li><a href="/docs/devops/operation-guide/manage-permission/permission.html">权限管理</a></li>
+							<li><a href="/docs/devops/operation-guide/configuration/configuration.html">配置项</a></li>
+							<li class="has-children">
+			      				<input type="checkbox" name ="devops_beginner_guide_service" id="devops_beginner_guide_service">
+								<label for="devops_beginner_guide_service">服务</label>
+
+								<ul>
+									<li><a href="/docs/devops/operation-guide/service/ntp.html">NTP服务</a></li>
+									<li><a href="/docs/devops/operation-guide/service/source.html">软件源</a></li>
+								</ul>
+			      			</li>
+						</ul>
+	      			</li>
+					<li><a href="/docs/devops/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="rds" id="rds">
+				<label for="rds">关系型数据库</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="rds_introduction" id="rds_introduction">
+						<label for="rds_introduction">产品简介</label>
+
+						<ul>
+							<li><a href="/docs/rds/introduction/concept.html">产品概念</a></li>
+							<li><a href="/docs/rds/introduction/feature.html">产品特性</a></li>
+							<li><a href="/docs/rds/introduction/quota.html">产品配额</a></li>
+							<li><a href="/docs/rds/introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="rds_purchase_guide" id="rds_purchase_guide">
+						<label for="rds_purchase_guide">购买指南</label>
+
+						<ul>
+							<li><a href="/docs/rds/purchase-guide/purchase-channel.html">购买渠道</a></li>
+							<li><a href="/docs/rds/purchase-guide/price.html">产品定价</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="rds_beginner_guide" id="rds_beginner_guide">
+						<label for="rds_beginner_guide">新手指南</label>
+
+						<ul>
+							<li><a href="/docs/rds/beginner-guide/create-resource.html">资源创建</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="rds_operation_guide" id="rds_operation_guide">
+						<label for="rds_operation_guide">操作指南</label>
+						<ul>
+							<li><a href="/docs/rds/operation-guide/create-instanse.html">创建实例</a></li>
+							<li><a href="/docs/rds/operation-guide/delete-instance.html">删除实例</a></li>
+							<li><a href="/docs/rds/operation-guide/create-database.html">创建数据库</a></li>
+							<li><a href="/docs/rds/operation-guide/create-account.html">创建帐号</a></li>
+							<li><a href="/docs/rds/operation-guide/config.html">自定义配置文件</a></li>
+							<li><a href="/docs/rds/operation-guide/config-security-rules.html">自定义安全组</a></li>
+						</ul>
+	      			</li>
+					<li><a href="/docs/rds/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+
+			<li class="has-children">
+				<input type="checkbox" name ="lb" id="lb">
+				<label for="lb">负载均衡</label>
+	      		<ul>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="lb_introduction" id="lb_introduction">
+						<label for="lb_introduction">产品简介</label>
+
+						<ul>
+							<li><a href="/docs/lb/introduction/concept.html">产品概念</a></li>
+							<li><a href="/docs/lb/introduction/feature.html">产品特性</a></li>
+							<li><a href="/docs/lb/introduction/quota.html">产品配额</a></li>
+							<li><a href="/docs/lb/introduction/scenario.html">典型的应用场景</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="lb_purchase_guide" id="lb_purchase_guide">
+						<label for="lb_purchase_guide">购买指南</label>
+
+						<ul>
+							<li><a href="/docs/lb/purchase-guide/purchase-channel.html">购买渠道</a></li>
+							<li><a href="/docs/lb/purchase-guide/price.html">产品定价</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="lb_beginner_guide" id="lb_beginner_guide">
+						<label for="lb_beginner_guide">新手指南</label>
+
+						<ul>
+							<li><a href="/docs/lb/beginner-guide/plan.html">整体规划</a></li>
+							<li><a href="/docs/lb/beginner-guide/config-host.html">配置云主机</a></li>
+							<li><a href="/docs/lb/beginner-guide/expand-host.html">横向扩展云主机</a></li>
+							<li><a href="/docs/lb/beginner-guide/create-lb.html">创建负载均衡</a></li>
+							<li><a href="/docs/lb/beginner-guide/config-lb.html">配置负载均衡</a></li>
+							<li><a href="/docs/lb/beginner-guide/delete-lb.html">删除负载均衡</a></li>
+						</ul>
+	      			</li>
+	      			<li class="has-children">
+	      				<input type="checkbox" name ="lb_operation_guide" id="lb_operation_guide">
+						<label for="lb_operation_guide">操作指南</label>
+						<ul>
+							<li><a href="/docs/lb/operation-guide/create-lb.html">创建负载均衡</a></li>
+							<li><a href="/docs/lb/operation-guide/create-listener.html">新建监听器</a></li>
+							<li><a href="/docs/lb/operation-guide/add-hosts.html">添加后端服务器</a></li>
+							<li><a href="/docs/lb/operation-guide/show-mnt.html">查看监控</a></li>
+							<li><a href="/docs/lb/operation-guide/show-listener-hosts.html">查看监听器及后端列表</a></li>
+							<li><a href="/docs/lb/operation-guide/unbind-IP.html">解绑公网IP</a></li>
+							<li><a href="/docs/lb/operation-guide/delete-lb.html">删除负载均衡</a></li>
+						</ul>
+	      			</li>
+					<li><a href="/docs/lb/faq/faq.html">常见问题</a></li>
+	      		</ul>
+			</li>
+	</nav>
+	<section id="body">
+		<div class="padding highlightable">
+			<div id="body-inner">
+<h1>创建数据库</h1>
+<br>
+<p>数据库实例创建后，点击&ldquo;操作栏&rdquo;中的&ldquo;管理&rdquo;，进入实例详情页。</p>
+<div class="figure"><img src="/docs/file/rds/operation-guide/3b1b1a9869d6174f81c6b275d254539c.png" alt="" /></div>
+<p>点击&ldquo;新建数据库&rdquo;按钮，弹出创建数据库窗口。</p>
+<div class="figure"><img src="/docs/file/rds/operation-guide/a48466cac2c044b068aa3a2d980732d2.png" alt="" /></div>
+<p>填写完新建数据库相关信息后，点击确认，完成新建数据库。</p>
+<div class="figure"><img src="/docs/file/rds/operation-guide/a750f03e97db1b6b19e2e8a9791928c7.png" alt="" /></div>			<hr>
+			<p>
+				如果您有更多问题, <a href="mailto:info@cloudin.cn"> 发送邮件 </a>或者 <a target="_blank" href="https://console.cloudin.cn/ticket"> 提工单 </a>反馈给我们。
+			</p>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="index" class="index-out">
+	<ul class="table-of-contents">
+	</ul>
+	</section>
+
+	<div class="back-to-top">
+		<a ><i class="fa fa-arrow-up"></i></a>
+	</div>
+	<script src="/docs/skin/cloudin/js/main.js"></script> <!-- Resource jQuery -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="/docs/skin/cloudin/js/bootstrap.js"></script>
+</body>
+</html>

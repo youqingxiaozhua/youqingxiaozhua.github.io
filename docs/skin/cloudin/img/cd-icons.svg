@@ -1,0 +1,23 @@
+<svg width="80" height="16" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="82" height="18" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <polygon fill="#FFFFFF" points="8,12.6000004 0.3,4.9000001 1.7,3.4000001 8,9.6999998 14.3000002,3.4000001 15.6999998,4.9000001     " id="svg_2"/>
+  </g>
+  <g id="svg_3">
+   <path fill="#9f9fab" d="m31,3l-6.6,0l-2.7,-2.7c-0.2,-0.2 -0.4,-0.3 -0.7,-0.3l-4,0c-0.6,0 -1,0.4 -1,1l0,14c0,0.6 0.4,1 1,1l14,0c0.6,0 1,-0.4 1,-1l0,-11c0,-0.6 -0.4,-1 -1,-1z" id="svg_4"/>
+  </g>
+  <g id="svg_5">
+   <path fill="#9f9fab" d="m47.8,7.4c-0.2,-0.2 -0.5,-0.4 -0.8,-0.4l-11,0c-0.4,0 -0.8,0.2 -0.9,0.6l-3,7c-0.2,0.6 0,1.4 0.9,1.4l11,0c0.4,0 0.8,-0.2 0.9,-0.6l3,-7c0.2,-0.3 0.1,-0.7 -0.1,-1z" id="svg_6"/>
+   <path fill="#9f9fab" d="m33.2,6.8c0.5,-1.1 1.6,-1.8 2.8,-1.8l9,0l0,-2c0,-0.6 -0.4,-1 -1,-1l-5.6,0l-1.7,-1.7c-0.2,-0.2 -0.4,-0.3 -0.7,-0.3l-3,0c-0.6,0 -1,0.4 -1,1l0,8.7l1.2,-2.9z" id="svg_7"/>
+  </g>
+  <rect fill="#ffffff" stroke-width="1.5" x="56.5" y="8.333332" width="0" height="0" id="svg_10" stroke="#000"/>
+  <rect fill="#a9d223" stroke-width="1.5" stroke-opacity="0" x="53.5" y="5.333332" width="6" height="5.5" id="svg_11" stroke="#000000"/>
+  <rect id="svg_19" height="5.170489" width="5.844675" y="5.447276" x="67.722907" stroke-width="1.5" fill="#9f9fab"/>
+ </g>
+</svg>
