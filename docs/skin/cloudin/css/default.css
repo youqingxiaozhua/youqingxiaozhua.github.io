@@ -47,7 +47,7 @@ body, html { 	padding: 0; margin: 0;}
 }
 
 body{
-	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	font-family: "PingFang SC","Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 }
 a{color: #2fa0ec;text-decoration: none;outline: none;}
 a:hover,a:focus{color:#74777b;}
@@ -83,10 +83,10 @@ a:hover,a:focus{color:#74777b;}
 	font-size: 2em;
 	line-height: 1;
 	margin-bottom: 0;
-	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	font-family: "PingFang SC","Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 }
 .htmleaf-header h1 span {
-	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	font-family: "PingFang SC","Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 	display: block;
 	font-size: 60%;
 	font-weight: 400;
@@ -166,7 +166,7 @@ a:hover,a:focus{color:#74777b;}
 	text-align: center;
 	margin: 20px 10px;
 	padding: 25px;
-	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	font-family: "PingFang SC","Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
 }
 .related a {
 	display: inline-block;
