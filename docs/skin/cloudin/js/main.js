@@ -30,7 +30,7 @@ jQuery(window).load(function(){
 		// $("#body").css("margin-right","180px");
 		for (var i = 0;i < title2.length;i++){
 	        title2.name = title2[i].innerHTML;
-	        var indexlist = '<li class="indexlist"><a>'+title2[i].innerHTML+'</a></li>';
+	        var indexlist = '<li class="indexlist"><a title="'+title2[i].innerHTML+'">'+title2[i].innerHTML+'</a></li>';
 	    	$("#index").find('.table-of-contents').append(indexlist);
 	    }
 	}else{
