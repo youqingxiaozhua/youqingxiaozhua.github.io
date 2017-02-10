@@ -13,7 +13,7 @@
 	<script src="/docs/skin/cloudin/js/modernizr.js"></script> <!-- Modernizr -->
 	<link rel="stylesheet" type="text/css" href="/docs/skin/cloudin/css/default.css">
 	<link rel="stylesheet" type="text/css" href="/docs/skin/cloudin/css/docs2.0.css">
-	<script src="https://www.cloudin.cn/js/jquery-1.7.1.min.js"></script>
+	<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 
 	<!--[if IE]>
 		<script src="//cdn.bootcss.com/html5shiv/3.7/html5shiv.min.js"></script>
@@ -80,9 +80,6 @@
 					<li><a href="/docs/rds/beginner-guide/create-resource.html">关系型数据库</a></li>
 					<li><a href="/docs/lb/beginner-guide/plan.html">负载均衡</a></li>
 				</ul>
-			</li>
-			<li>
-				<a href="/docs/beian/beian.html">域名备案</a>
 			</li>
 			<li class="has-children">
 				<input type="checkbox" name ="finance" id="finance">
@@ -513,8 +510,8 @@
 <p>登录 CloudIn 控制台，并选择&ldquo;地域&rdquo;；选择&ldquo;计算￫主机&rdquo;，在每台主机的名称旁边都有一个显示器模样的按钮，点击它， 即可打开远程连接页面连接到主机的本地显示器。（如果未有页面弹出请检查是否有被浏览器拦截）</p>
 <div class="figure"><img src="https://www.cloudin.cn/products/cloud_server/images/instance-connect-step01-01.png" alt="" /></div>
 <h2 id="方法二使用-ssh">方法二：使用 SSH</h2>
-<p>此操作仅支持 Linux 操作系统。</p>
-<p><strong>密码登陆： </strong>ssh root@ip_address </p>
+<p>此操作仅支持 Linux 操作系统，Mac和Linux用户可使用系统自带终端，Windows用户可下载putty（<a href="http://dlsw.baidu.com/sw-search-sp/soft/78/15699/putty_V0.63.0.0.43510830.exe">点击下载</a>）使用。</p>
+<p><strong>密码登陆： </strong>ssh root@ip_address</p>
 <p><strong>密钥登陆：</strong>见后文<a href="/docs/security-service/operations-guide/key/create-key.html">密钥</a>功能模块指南</p>
 <h2 id="方法三使用远程桌面">方法三：使用远程桌面</h2>
 <p>此操作仅支持 Windows 操作系统。</p>

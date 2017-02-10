@@ -13,7 +13,7 @@
 	<script src="/docs/skin/cloudin/js/modernizr.js"></script> <!-- Modernizr -->
 	<link rel="stylesheet" type="text/css" href="/docs/skin/cloudin/css/default.css">
 	<link rel="stylesheet" type="text/css" href="/docs/skin/cloudin/css/docs2.0.css">
-	<script src="https://www.cloudin.cn/js/jquery-1.7.1.min.js"></script>
+	<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 
 	<!--[if IE]>
 		<script src="//cdn.bootcss.com/html5shiv/3.7/html5shiv.min.js"></script>
@@ -79,9 +79,6 @@
 					<li><a href="/docs/rds/beginner-guide/create-resource.html">关系型数据库</a></li>
 					<li><a href="/docs/lb/beginner-guide/plan.html">负载均衡</a></li>
 				</ul>
-			</li>
-			<li>
-				<a href="/docs/beian/beian.html">域名备案</a>
 			</li>
 			<li class="has-children">
 				<input type="checkbox" name ="finance" id="finance">
@@ -547,11 +544,11 @@
 <pre><code>UseDNS no GSSAPIAuthentication no</code></pre>
 <p>保存修改后重启sshd服务，若按此步骤操作后仍然没有解决请提交工单处理。</p>
 <h3>13、修改主机名重启后失效</h3>
-<p>为避免网络内主机名重复造成各种问题，CloudIn云英默认会将主机名修改为主机ID，如果您想自定义主机名，请修改 /etc/cloud/cloud.cfg 文件，将其中第23行 &ldquo;- update_hostname&rdquo;注释掉即可，如图：</p>
+<p>为避免网络内主机名重复造成各种问题，CloudIn云英默认会将主机名修改为主机ID，如果您想自定义主机名，请修改 /etc/cloud/cloud.cfg 文件，将其中第36行 &ldquo;- update_hostname&rdquo;注释掉即可，如图：</p>
 <p><img src="/docs/file/web-server/faq/869ec79bd2e68af0daa58981551a36d0.png" alt="Snip20161020_7.png" /></p>
 <p>&nbsp;</p>
 <h3>14、修改host文件重启后失效</h3>
-<p>与上一个问题类似，CloudIn云英默认会将主机host文件清空，如果您想修改host文件，请修改 /etc/cloud/cloud.cfg 文件，将其中第24行 &ldquo;- update_etc_hosts&rdquo;注释掉即可。</p>			<hr>
+<p>与上一个问题类似，CloudIn云英默认会将主机host文件清空，如果您想修改host文件，请修改 /etc/cloud/cloud.cfg 文件，将其中第37行 &ldquo;- update_etc_hosts&rdquo;注释掉即可。</p>			<hr>
 			<p>
 				如果您有更多问题, <a href="mailto:info@cloudin.cn"> 发送邮件 </a>或者 <a target="_blank" href="https://console.cloudin.cn/ticket"> 提工单 </a>反馈给我们。
 			</p>
