@@ -58,10 +58,10 @@
 				<input type="checkbox" name ="price" id="price">
 				<label for="price">产品定价</label>
 	      		<ul>
-					<li><a href="/docs/web-server/buying-guide/price/host.html">云主机</a></li>
-					<li><a href="/docs/web-server/buying-guide/price/disk.html">云硬盘</a></li>
-					<li><a href="/docs/web-server/buying-guide/price/backup.html">云备份</a></li>
-					<li><a href="/docs/web-server/buying-guide/price/ip.html">公网IP</a></li>
+					<li><a href="/docs/web-server/purchase-guide/price/host.html">云主机</a></li>
+					<li><a href="/docs/web-server/purchase-guide/price/disk.html">云硬盘</a></li>
+					<li><a href="/docs/web-server/purchase-guide/price/backup.html">云备份</a></li>
+					<li><a href="/docs/web-server/purchase-guide/price/ip.html">公网IP</a></li>
 					<li><a href="/docs/security-service/purchase-guide/price.html">DDoS高防服务</a></li>
 					<li><a href="/docs/rds/purchase-guide/price.html">关系型数据库</a></li>
 					<li><a href="/docs/lb/purchase-guide/price.html">负载均衡</a></li>
@@ -125,17 +125,17 @@
 						<label for="purchase-guide">购买指南</label>
 
 						<ul>
-							<li><a href="/docs/web-server/buying-guide/zone.html">地域</a></li>
-							<li><a href="/docs/web-server/buying-guide/purchase-channel.html">购买渠道</a></li>
+							<li><a href="/docs/web-server/purchase-guide/zone.html">地域</a></li>
+							<li><a href="/docs/web-server/purchase-guide/purchase-channel.html">购买渠道</a></li>
 			      			<li class="has-children">
 			      				<input type="checkbox" name ="server-price" id="server-price">
 								<label for="server-price">产品定价</label>
 
 								<ul>
-									<li><a href="/docs/web-server/buying-guide/price/host.html">云主机</a></li>
-									<li><a href="/docs/web-server/buying-guide/price/disk.html">云硬盘</a></li>
-									<li><a href="/docs/web-server/buying-guide/price/ip.html">公网IP</a></li>
-									<li><a href="/docs/web-server/buying-guide/price/backup.html">备份</a></li>
+									<li><a href="/docs/web-server/purchase-guide/price/host.html">云主机</a></li>
+									<li><a href="/docs/web-server/purchase-guide/price/disk.html">云硬盘</a></li>
+									<li><a href="/docs/web-server/purchase-guide/price/ip.html">公网IP</a></li>
+									<li><a href="/docs/web-server/purchase-guide/price/backup.html">备份</a></li>
 								</ul>
 			      			</li>		      			
 						</ul>
@@ -512,70 +512,93 @@
 <p>CloudIn关系型数据库在实时计费模式下包含三个计费项，CPU/内存和存储大小。其中CPU和内存是按照规则做了绑定；</p>
 <p>支持分钟级计费，计费周期为 5 分钟；</p>
 <h4 id="单价表">单价表</h4>
-<p>数据库实例配置单价如下：</p>
-<table>
-    <thead>
-        <tr class="header">
-            <th align="center">cpu</th>
-            <th align="center">memory</th>
-            <th align="center">单价（元/分钟）</th>
-            <th align="center">参考价（元/小时）</th>
-        </tr>
-    </thead>
+<p>RDS实例配置单价如下：</p>
+<p><style type="text/css">table {  }td { padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-size: 12pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: DengXian,sans-serif; vertical-align: bottom; border: medium none; white-space: nowrap; }.xl63 { font-weight: 700; }.xl64 {  }.xl65 {  }</style></p>
+<table style="border-collapse:
+    collapse;width:288pt" width="385" cellspacing="0" cellpadding="0" border="0">
+    <colgroup><col style="width:65pt" width="87" span="2" />  <col style="mso-width-source:userset;mso-width-alt:3968;width:93pt" width="124" />  <col style="width:65pt" width="87" />  </colgroup>
     <tbody>
-        <tr class="odd">
-            <td align="center">1core</td>
-            <td align="center">1GB</td>
-            <td align="center">0.005368</td>
-            <td align="center">0.32</td>
+        <tr style="height:16.0pt" height="21">
+            <td class="xl63" style="height:16.0pt;width:65pt" width="87" height="21">cpu</td>
+            <td class="xl63" style="width:65pt" width="87">memory</td>
+            <td class="xl63" style="width:93pt" width="124">单价（元/分钟）</td>
+            <td class="xl63" style="width:65pt" width="87">参考价（元/小时）</td>
         </tr>
-        <tr class="even">
-            <td align="center">1core</td>
-            <td align="center">2GB</td>
-            <td align="center">0.010751</td>
-            <td align="center">0.65</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">1core</td>
+            <td>1GB</td>
+            <td class="xl64" align="right">0.0032</td>
+            <td class="xl65" align="right">0.19</td>
         </tr>
-        <tr class="odd">
-            <td align="center">2core</td>
-            <td align="center">4GB</td>
-            <td align="center">0.021518</td>
-            <td align="center">1.29</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">1core</td>
+            <td>2GB</td>
+            <td class="xl64" align="right">0.0065</td>
+            <td class="xl65" align="right">0.39</td>
         </tr>
-        <tr class="even">
-            <td align="center">2core</td>
-            <td align="center">8GB</td>
-            <td align="center">0.041151</td>
-            <td align="center">2.47</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">2core</td>
+            <td>4GB</td>
+            <td class="xl64" align="right">0.0172</td>
+            <td class="xl65" align="right">1.03</td>
         </tr>
-        <tr class="odd">
-            <td align="center">4core</td>
-            <td align="center">8GB</td>
-            <td align="center">0.042734</td>
-            <td align="center">2.56</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">2core</td>
+            <td>8GB</td>
+            <td class="xl64" align="right">0.0267</td>
+            <td class="xl65" align="right">1.60</td>
         </tr>
-        <tr class="even">
-            <td align="center">4core</td>
-            <td align="center">16GB</td>
-            <td align="center">0.082159</td>
-            <td align="center">4.93</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">4core</td>
+            <td>8GB</td>
+            <td class="xl64" align="right">0.0363</td>
+            <td class="xl65" align="right">2.18</td>
         </tr>
-        <tr class="odd">
-            <td align="center">8core</td>
-            <td align="center">16GB</td>
-            <td align="center">0.085484</td>
-            <td align="center">5.13</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">4core</td>
+            <td>16GB</td>
+            <td class="xl64" align="right">0.0555</td>
+            <td class="xl65" align="right">3.33</td>
         </tr>
-        <tr class="even">
-            <td align="center">8core</td>
-            <td align="center">32GB</td>
-            <td align="center">0.164018</td>
-            <td align="center">9.84</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">8core</td>
+            <td>16GB</td>
+            <td class="xl64" align="right">0.0716</td>
+            <td class="xl65" align="right">4.29</td>
         </tr>
-        <tr class="odd">
-            <td align="center">16core</td>
-            <td align="center">64GB</td>
-            <td align="center">0.328051</td>
-            <td align="center">19.68</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">8core</td>
+            <td>32GB</td>
+            <td class="xl64" align="right">0.1092</td>
+            <td class="xl65" align="right">6.55</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">16core</td>
+            <td>64GB</td>
+            <td class="xl64" align="right">0.2192</td>
+            <td class="xl65" align="right">13.15</td>
+        </tr>
+    </tbody>
+</table>
+<p>存储空间单价如下：</p>
+<table style="border-collapse:
+    collapse;width:130pt" width="174" cellspacing="0" cellpadding="0" border="0">
+    <tbody>
+        <tr style="height:16.0pt" height="21">
+            <td>类型</td>
+            <td class="xl63" style="width:65pt" width="87">单价（元/10G/小时）</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">普通型</td>
+            <td align="right">0.0083</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">性能型</td>
+            <td align="right">0.0150</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">超高性能型</td>
+            <td align="right">0.0300</td>
         </tr>
     </tbody>
 </table>
@@ -585,75 +608,98 @@
 <p>您可以在预付期限内任意使用您的预付费数据库；</p>
 <p>采用预付费方式需要在购买时一次付清预付费期限内的费用；</p>
 <h4 id="单价表-1">单价表</h4>
-<p>普通型数据库实例配置单价如下：</p>
-<p><style type="text/css">table {  }td { padding-top: 1px; padding-right: 1px; padding-left: 1px; color: black; font-size: 12pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: Calibri,sans-serif; vertical-align: bottom; border: medium none; white-space: nowrap; }.xl63 { font-weight: 700; }</style></p>
-<table>
-    <colgroup><col span="4" />  </colgroup>
-    <thead>
-        <tr>
-            <th>cpu</th>
-            <th>memory</th>
-            <th>单价（元/月）</th>
-            <th>参考价（元/年）</th>
-        </tr>
-    </thead>
+<p>RDS实例配置单价如下：</p>
+<table style="border-collapse:
+    collapse;width:288pt" width="385" cellspacing="0" cellpadding="0" border="0">
+    <colgroup><col style="width:65pt" width="87" span="2" />  <col style="mso-width-source:userset;mso-width-alt:3968;width:93pt" width="124" />  <col style="width:65pt" width="87" />  </colgroup>
     <tbody>
-        <tr>
-            <td>1core</td>
+        <tr style="height:16.0pt" height="21">
+            <td>cpu</td>
+            <td class="xl63" style="width:65pt" width="87">memory</td>
+            <td class="xl63" style="width:93pt" width="124">单价（元/月）</td>
+            <td class="xl63" style="width:65pt" width="87">参考价（元/年）</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">1core</td>
             <td>1GB</td>
-            <td>154</td>
-            <td>1848</td>
+            <td align="right">92</td>
+            <td align="right">1104</td>
         </tr>
-        <tr>
-            <td>1core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">1core</td>
             <td>2GB</td>
-            <td>308.85</td>
-            <td>3706.2</td>
+            <td align="right">186</td>
+            <td align="right">2232</td>
         </tr>
-        <tr>
-            <td>2core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">2core</td>
             <td>4GB</td>
-            <td>615.7</td>
-            <td>7388.4</td>
+            <td align="right">494</td>
+            <td align="right">5928</td>
         </tr>
-        <tr>
-            <td>2core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">2core</td>
             <td>8GB</td>
-            <td>1181.9</td>
-            <td>14182.8</td>
+            <td align="right">770</td>
+            <td align="right">9240</td>
         </tr>
-        <tr>
-            <td>4core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">4core</td>
             <td>8GB</td>
-            <td>1229.4</td>
-            <td>14752.8</td>
+            <td align="right">1046</td>
+            <td align="right">12552</td>
         </tr>
-        <tr>
-            <td>4core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">4core</td>
             <td>16GB</td>
-            <td>2362.75</td>
-            <td>28353</td>
+            <td align="right">1598</td>
+            <td align="right">19176</td>
         </tr>
-        <tr>
-            <td>8core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">8core</td>
             <td>16GB</td>
-            <td>2457.75</td>
-            <td>29493</td>
+            <td align="right">2061</td>
+            <td align="right">24732</td>
         </tr>
-        <tr>
-            <td>8core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">8core</td>
             <td>32GB</td>
-            <td>4723.5</td>
-            <td>56682</td>
+            <td align="right">3145</td>
+            <td align="right">37740</td>
         </tr>
-        <tr>
-            <td>16core</td>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">16core</td>
             <td>64GB</td>
-            <td>9445.95</td>
-            <td>113351.4</td>
+            <td align="right">6314</td>
+            <td align="right">75768</td>
         </tr>
     </tbody>
-</table>			<hr>
+</table>
+<p>&nbsp;</p>
+<p>存储空间单价如下：</p>
+<table style="border-collapse:
+    collapse;width:130pt" width="174" cellspacing="0" cellpadding="0" border="0">
+    <colgroup><col style="width:65pt" width="87" span="2" />  </colgroup>
+    <tbody>
+        <tr style="height:16.0pt" height="21">
+            <td>类型</td>
+            <td class="xl63" style="width:65pt" width="87">单价（元/10G）</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">普通型</td>
+            <td align="right">4</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">性能型</td>
+            <td align="right">7.22</td>
+        </tr>
+        <tr style="height:16.0pt" height="21">
+            <td style="height:16.0pt" height="21">超高性能型</td>
+            <td align="right">14.4</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>			<hr>
 			<p>
 				如果您有更多问题, <a href="mailto:info@cloudin.cn"> 发送邮件 </a>或者 <a target="_blank" href="https://console.cloudin.cn/ticket"> 提工单 </a>反馈给我们。
 			</p>
