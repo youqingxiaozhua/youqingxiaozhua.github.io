@@ -518,7 +518,10 @@ curl -s http://172.22.0.16:8082/install_repo.bash | sudo bash </pre>
 <h3>安装Apache</h3>
 <p>在终端中执行命令：</p>
 <pre>
-yum install httpd &ndash;y service httpd start chkconfig -add httpd chkconfig httpd on </pre>
+yum install httpd &ndash;y 
+service httpd start 
+chkconfig -add httpd 
+chkconfig httpd on </pre>
 <p>提示OK，说明Apache已启动</p>
 <h2>3.部署代码</h2>
 <p>进入/var/www/html/目录，并新建index.html文件，输</p>
@@ -535,8 +538,7 @@ cd /var/www/html/ vi index.html </pre>
 <p>此时通过公网访问该主机将显示：This is Host1</p>
 <p><img src="/docs/file/lb/beginner-guide/0a40090c652bda918d0bd94dadd1bac9.png" alt="访问显示This is Host1" /></p>
 <p>&nbsp;</p>
-<p>下一步：<a href="/docs/lb/beginner-guide/expand-host.html">横向扩展云主机</a></p>
-			<hr>
+<p>下一步：<a href="/docs/lb/beginner-guide/expand-host.html">横向扩展云主机</a></p>			<hr>
 			<p>
 				如果您有更多问题, <a href="mailto:info@cloudin.cn"> 发送邮件 </a>或者 <a target="_blank" href="https://console.cloudin.cn/ticket"> 提工单 </a>反馈给我们。
 			</p>
